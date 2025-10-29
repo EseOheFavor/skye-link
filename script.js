@@ -1,9 +1,9 @@
 // Sample Products
 const products = [
-    { name: 'Samsung Phone', price: 50000, img: 'https://via.placeholder.com/200?text=Samsung' },
-    { name: 'SIM Pack', price: 500, img: 'https://via.placeholder.com/200?text=SIM' },
-    { name: 'Recharge Card', price: 1000, img: 'https://via.placeholder.com/200?text=Recharge' },
-    { name: 'CUG Line', price: 2000, img: 'https://via.placeholder.com/200?text=CUG' }
+    { name: 'Samsung Phone', price: 50000, img: 'images/samsung.jpg' },
+    { name: 'SIM Pack', price: 500, img: 'images/sim.jpg' },
+    { name: 'Recharge Card', price: 1000, img: 'images/recharge.jpg' },
+    { name: 'CUG Line', price: 2000, img: 'images/cug.jpg' }
 ];
 
 function loadProducts() {
@@ -25,5 +25,6 @@ function addToCart(name, price) {
 function scrollToShop() {
     document.getElementById('shop').scrollIntoView();
 }
+
 
 if (document.getElementById('products')) loadProducts();
