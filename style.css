@@ -9,4 +9,11 @@ button { background: #007BFF; color: #FFF; padding: 0.5rem 1rem; border: none; c
 table { width: 100%; border-collapse: collapse; border: 1px solid #007BFF; }
 th, td { border: 1px solid #007BFF; padding: 0.5rem; text-align: left; }
 form { max-width: 400px; display: flex; flex-direction: column; gap: 0.5rem; }
+
 footer { background: #007BFF; color: #FFF; text-align: center; padding: 1rem; }
+
+.hero-img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
