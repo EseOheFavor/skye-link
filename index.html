@@ -1,53 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skye Link Telecom Enterprises - Digital Solutions at Your Doorstep</title>
-    <link rel="icon" type="image/x-icon" href="https://via.placeholder.com/32x32/007BFF/FFFFFF?text=SL"> <!-- Favicon: Replace with custom -->
+    <title>Lumos Solar - SKYE LINK TELECOM ENTERPRISES</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <meta name="description" content="Affordable Lumos L1 solar kits in Benin City – Reliable power, no noise, save ₦70k/week on fuel!">
 </head>
 <body>
     <header>
         <nav>
             <h1><a href="index.html">SKYE LINK TELECOM ENTERPRISES</a></h1>
             <ul>
-                <li><a href="#shop">Shop</a></li>
+                <li><a href="index.html#shop">Shop</a></li>
                 <li><a href="services.html">Services</a></li>
+                <li><a href="lumos.html">Lumos Solar</a></li>
                 <li><a href="branches.html">Branches</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="hero">
+    <section id="lumos-hero">
         <div class="hero-content">
-            <img src="images/lucky-hero.jpg" alt="Ayinbuomwan Lucky" class="hero-img"> <!-- Lucky's hero photo -->
-            <h2>Bringing Digital Solutions to Your Doorstep</h2>
-            <p>Mobile Money, VTU, SIM Registration & More</p>
-            <button onclick="scrollToShop()">Shop Now</button>
-            <button onclick="window.location.href='services.html#moniepoint'">Activate Moniepoint</button>
+            <img src="images/lumos-flyer.jpg" alt="Lumos L1 Solar Kit Family" class="hero-img"> <!-- First flyer -->
+            <h2>Get Steady Light Without Relying on Generators</h2>
+            <p>Powering Homes, Empowering Lives – Reliable Power, No Noise, Save ₦70,000 Each Week</p>
+            <button onclick="scrollToLumosShop()">Explore Plans</button>
         </div>
     </section>
 
-    <section id="featured">
-        <h2>Featured Products</h2>
-        <div id="products">
-            <!-- Products load via JS -->
-        </div>
-        <button onclick="addToCart('Sample Phone', 50000)">Add to Cart Example</button>
+    <section id="testimonial">
+        <h2>Real Stories</h2>
+        <blockquote>
+            <img src="images/pharmacist.jpg" alt="Mr. A., Pharmacist" style="width:150px; border-radius:50%; float:left; margin-right:1rem;"> <!-- Crop from second flyer -->
+            <p>"Since switching to Lumos, I've been able to power my pharmacy without worrying about fuel or outages. I now save up to ₦70,000 weekly and my shop is always well-lit and welcoming to customers. Lumos has made running my business easy, cost-effective, and completely stress-free."</p>
+            <cite>– Mr. A., Pharmacist, Port Harcourt</cite>
+        </blockquote>
+        <p>Across Southern and Western Nigeria, Lumos has become the go-to power solution, keeping homes, businesses, and lives running day and night. With savings of up to 70% compared to using a generator, make the switch today and start powering your future with clean, reliable, and affordable energy.</p>
     </section>
 
-    
+    <section id="lumos-featured">
+        <h2>Lumos L1 Plans</h2>
+        <table class="pricing-table">
+            <tr><th>Plan</th><th>Initial Payment</th><th>Monthly Payments</th><th>Total to Ownership</th></tr>
+            <tr><td>12-Month (11 Repays)</td><td>₦100,000</td><td>₦39,700</td><td>₦537,700</td></tr>
+            <tr><td>18-Month (17 Repays)</td><td>₦100,000</td><td>₦29,500</td><td>₦601,500</td></tr>
+            <tr><td>24-Month (23 Repays)</td><td>₦100,000</td><td>₦24,950</td><td>₦673,950</td></tr>
+            <tr><td>Outright Payment</td><td colspan="3">₦525,000 (Immediate Ownership)</td></tr>
+        </table>
+        <p><em>*Prices exclude delivery & installation charges (~₦15,000). Yours for as low as ₦24,950/month. Find out more at lumos.com.ng</em></p>
+        <div id="lumos-products">
+            <!-- Loads via JS -->
+        </div>
+    </section>
+
+    <section id="what-it-powers">
+        <h2>What Lumos Can Power</h2>
+        <div class="powers-grid">
+            <div><img src="images/led-tv.jpg" alt="LED TV"><span>LED TV (Max 50W)</span></div>
+            <div><img src="images/ac-fan.jpg" alt="AC Standing Fan"><span>AC Standing Fan</span></div>
+            <div><img src="images/laptop.jpg" alt="Laptop"><span>Laptop</span></div>
+            <div><img src="images/radio.jpg" alt="Radio"><span>Radio</span></div>
+            <div><img src="images/dc-bulb.jpg" alt="DC Bulb"><span>DC Bulb (4 Included)</span></div>
+            <div><img src="images/sewing.jpg" alt="Sewing Machine"><span>Sewing Machine</span></div>
+            <div><img src="images/decoder.jpg" alt="Decoder"><span>Decoder</span></div>
+            <div><img src="images/cctv.jpg" alt="CCTV"><span>CCTV (Max 2)</span></div>
+            <div><img src="images/mobile.jpg" alt="Mobile Phone"><span>Mobile Phone</span></div>
+            <div><img src="images/dc-fan.jpg" alt="DC Fan"><span>DC Fan</span></div>
+            <div><img src="images/small-theatre.jpg" alt="Small Home Theatre"><span>Small Home Theatre</span></div>
+            <div><img src="images/clipper.jpg" alt="Clipper"><span>Clipper</span></div>
+        </div>
+    </section>
+
+    <section id="contact-lumos">
+        <h2>Contact Us Now for Lumos</h2>
+        <form action="https://formspree.io/f/YOUR_LUMOS_FORM_ID" method="POST"> <!-- New Formspree form for leads -->
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Email Address">
+            <textarea name="message" placeholder="Tell us about your power needs (e.g., home or business)"></textarea>
+            <button type="submit">Get Quote – Yours for ₦24,950/month</button>
+        </form>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Skye Link Telecom Enterprises. All rights reserved. | Benin City, Edo State</p>
+        <p>&copy; 2025 SKYE LINK TELECOM ENTERPRISES. All rights reserved. | Benin City, Edo State</p>
     </footer>
+
+    <script>
+        function scrollToLumosShop() {
+            document.getElementById('lumos-featured').scrollIntoView();
+        }
+    </script>
 </body>
 </html>
-
-
-
-
