@@ -30,3 +30,9 @@ function loadProducts(containerId = 'products', isLumos = false) {
 if (document.getElementById('lumos-products')) loadProducts('lumos-products', true);
 
 // Rest of existing code (Paystack, etc.)
+
+function closeBanner() {
+    document.getElementById('convocation-banner').style.display = 'none';
+}
+// Auto-hide after 15s
+setTimeout(closeBanner, 15000);
